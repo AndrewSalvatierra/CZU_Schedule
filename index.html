@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Class Schedule</title>
+<meta name="description" content="CZU PEF winter semester 2026/2027 schedule — group INFOAP2, odd week." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div>
+      <h1>My Class Schedule</h1>
+      <p class="sub">CZU PEF · Winter semester 2026/2027 · group <strong>INFOAP2</strong> · 28 Sep – 20 Dec 2026</p>
+    </div>
+    <div class="weekpick" role="group" aria-label="Week parity">
+      <button type="button" data-week="odd" class="active">Odd week</button>
+      <button type="button" data-week="even">Even week</button>
+    </div>
+  </div>
+  <div class="now" id="now"></div>
+</header>
+
+<main>
+  <section class="legend">
+    <span class="chip req">Attendance required</span>
+    <span class="chip part">75% attendance</span>
+    <span class="chip opt">Optional — not checked</span>
+    <span class="chip elect">Elective sport</span>
+  </section>
+
+  <div id="days" class="days"></div>
+
+  <section class="panel">
+    <h2>Courses &amp; attendance rules</h2>
+    <div id="courses" class="courses"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Rooms</h2>
+    <ul id="rooms" class="rooms"></ul>
+  </section>
+
+  <section class="panel">
+    <h2>Friday sport (KTV) — only if you enrolled</h2>
+    <ul id="sport" class="rooms"></ul>
+  </section>
+
+  <section class="panel notes">
+    <h2>Notes</h2>
+    <ul>
+      <li>All teaching takes place on the <strong>Praha&nbsp;–&nbsp;Suchdol</strong> campus.</li>
+      <li><strong>28/10/2026</strong> is a day off — Wednesday classes are cancelled that week.</li>
+      <li>Odd-week seminars (EREP8E, EJE37E, EIE55E) run only in odd teaching weeks. Week&nbsp;1 = week of 28&nbsp;Sep&nbsp;2026 = odd.</li>
+      <li>Timetable last changed 15/09/2026 — check UIS if something looks off.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>Built from the official CZU timetable and the five course syllabi.</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

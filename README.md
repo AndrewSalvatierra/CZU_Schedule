@@ -8,15 +8,16 @@ a clear marker for which classes actually take attendance.
 
 ## What it does
 
-- Toggle between **odd** and **even** week (odd-week seminars disappear on even weeks)
-- Auto-detects the current teaching week and highlights today
+- **Today / Whole week** view — opens on today by default
+- **Odd / even week** toggle (odd-week seminars disappear on even weeks); auto-detects the current teaching week
+- **Hide optional classes** — leaves only what actually takes attendance
 - Room code + description for every class
 - Attendance marker per class:
   - 🔴 **Attendance required** — compulsory per syllabus
   - 🟠 **75% attendance** — minimum attendance rule
   - 🟢 **Optional** — the syllabus imposes no attendance duty
-  - 🟣 **Elective sport** — KTV, only if enrolled
-- Full course list with the exact assessment/attendance wording from each syllabus
+- Separate **Course info** tab with the full course list, the exact attendance wording
+  from each syllabus, the room directory and the semester notes
 
 ## My week (odd)
 
@@ -31,8 +32,9 @@ a clear marker for which classes actually take attendance.
 | Thu | 15:45–17:15 | Fundamentals of Juridical Sciences | Seminar | PEF D444 | **Required** |
 | Thu | 17:30–19:00 | English for IT – 1st term | Seminar | PEF DI | **75%** |
 | Fri | 10:30–12:00 | Introduction to Principles of Computers | Seminar | PEF C27 | Optional |
+| Fri | 12:00–13:00 | Core Training (PE) | Sport | KTV Fitness | **Required** |
 
-On **even** weeks the three odd-week seminars are dropped, so Friday is free.
+On **even** weeks the three odd-week seminars are dropped, so Friday is core training only.
 
 ## Run locally
 
@@ -49,5 +51,5 @@ Framework preset: **Other**, no build command, output directory: `.`
 
 ## Editing
 
-All schedule data lives in [`data.js`](data.js) — courses, classes, rooms, sport slots.
+All schedule data lives in [`data.js`](data.js) — courses, classes and rooms.
 Nothing else needs touching to change a time, room or attendance rule.

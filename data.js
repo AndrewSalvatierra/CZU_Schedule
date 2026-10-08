@@ -62,12 +62,12 @@ const COURSES = {
       "Syllabus sets no attendance duty for lectures. Seminars are where the exercises are worked through — skipping them is on you.",
   },
   SPORT: {
-    name: "Physical Education (KTV)",
-    dept: "Department of Physical Education",
-    guarantor: "various",
-    completion: "Pass credit — optional",
+    name: "Core Training (Physical Education)",
+    dept: "Department of Physical Education (KTV)",
+    guarantor: "A. Fričová",
+    completion: "Pass credit",
     attendanceNote:
-      "Free-choice sport. Only relevant if you enrolled in one of the KTV groups.",
+      "Mandatory — attendance is taken in the enrolled sport group.",
   },
 };
 
@@ -138,6 +138,14 @@ const CLASSES = [
     note: "Your English group (INFOAP2). 75% attendance needed.",
   },
   {
+    day: 5, start: "12:00", end: "13:00",
+    code: "SPORT", type: "Core training", room: "KTV Fitness",
+    teacher: "A. Fričová",
+    weeks: "every",
+    attendance: "required",
+    note: "60 minutes. Mandatory — this is the sport course I enrolled in.",
+  },
+  {
     day: 5, start: "10:30", end: "12:00",
     code: "EIE55E", type: "Seminar", room: "PEF C27",
     teacher: "J. Ružejnikov",
@@ -145,18 +153,6 @@ const CLASSES = [
     attendance: "optional",
     note: "ODD weeks only — your group.",
   },
-];
-
-// Sport slots open to you on Friday if you took a KTV course (all optional).
-const SPORT = [
-  { day: 5, start: "08:45", end: "10:15", room: "KTVH", sport: "Football", teacher: "Č. Frič" },
-  { day: 5, start: "10:30", end: "12:00", room: "KTVM", sport: "Core training", teacher: "A. Fričová" },
-  { day: 5, start: "10:30", end: "12:00", room: "KTVM", sport: "Morning compensation", teacher: "M. Štohanzl" },
-  { day: 5, start: "10:30", end: "12:00", room: "KTVH", sport: "Football", teacher: "M. Kaľata" },
-  { day: 5, start: "10:30", end: "12:00", room: "KTVP", sport: "Fitness", teacher: "M. Kaľata" },
-  { day: 5, start: "12:15", end: "13:45", room: "KTVP", sport: "Gym (posilovna)", teacher: "I. Miklík" },
-  { day: 5, start: "12:15", end: "13:45", room: "KTVV", sport: "Volleyball", teacher: "R. Švejdar" },
-  { day: 5, start: "14:00", end: "15:30", room: "KTVB", sport: "Swimming — beginners", teacher: "L. Látová" },
 ];
 
 // Room codes exactly as printed on the official timetable. All teaching is on
@@ -170,10 +166,5 @@ const ROOMS = {
   "PEF D444": "PEF building, room D 444",
   "PEF DI": "PEF building, lecture hall D I",
   "PEF C27": "PEF building, room C 27",
-  "JIH368": "Building JIH, room 368 — other English groups, not yours",
-  "KTVH": "KTV — sports hall / pitch",
-  "KTVM": "KTV — gymnasium",
-  "KTVP": "KTV — fitness centre",
-  "KTVV": "KTV — volleyball hall",
-  "KTVB": "KTV — swimming pool",
+  "KTV Fitness": "CZU fitness centre — Department of Physical Education",
 };

@@ -35,7 +35,7 @@ const COURSES = {
     guarantor: "doc. Ing. Tomáš Macák, Ph.D.",
     completion: "Exam — 5 credits",
     attendanceNote:
-      "Syllabus sets no attendance duty. Assessed by case studies / team work in seminars and the final exam.",
+      "Lectures and seminars are mandatory. Assessed by case studies / team work in seminars and the final exam.",
   },
   EJE37E: {
     name: "Fundamentals of Juridical Sciences",
@@ -59,7 +59,7 @@ const COURSES = {
     guarantor: "Ing. Lucie Klaubenschalk Chytilová, Ph.D.",
     completion: "Exam — 5 credits",
     attendanceNote:
-      "Syllabus sets no attendance duty for lectures. Seminars are where the exercises are worked through — skipping them is on you.",
+      "Lectures and seminars are mandatory. The seminars are where the exercises are worked through.",
   },
   SPORT: {
     name: "Core Training (Physical Education)",
@@ -86,16 +86,16 @@ const CLASSES = [
     code: "EAE55E", type: "Seminar", room: "PEF EV",
     teacher: "E. Radová Garajová",
     weeks: "every",
-    attendance: "optional",
-    note: "Group block for INFOAP1 + INFOAP2. No class on 28/10/2026.",
+    attendance: "required",
+    note: "Group block for INFOAP1 + INFOAP2. Attendance mandatory. No class on 28/10/2026.",
   },
   {
     day: 3, start: "19:15", end: "20:45",
     code: "EAE55E", type: "Lecture", room: "PEF EI",
     teacher: "E. Radová Garajová",
     weeks: "every",
-    attendance: "optional",
-    note: "Whole year. No class on 28/10/2026.",
+    attendance: "required",
+    note: "Whole year. Attendance mandatory. No class on 28/10/2026.",
   },
   {
     day: 4, start: "08:45", end: "10:15",
@@ -110,16 +110,16 @@ const CLASSES = [
     code: "EREP8E", type: "Seminar", room: "PEF E323",
     teacher: "T. Macák",
     weeks: "odd",
-    attendance: "optional",
-    note: "ODD weeks only — your group.",
+    attendance: "required",
+    note: "ODD weeks only — your group. Attendance mandatory.",
   },
   {
     day: 4, start: "12:15", end: "13:45",
     code: "EREP8E", type: "Lecture", room: "PEF EI",
     teacher: "T. Macák",
     weeks: "every",
-    attendance: "optional",
-    note: "Whole year.",
+    attendance: "required",
+    note: "Whole year. Attendance mandatory.",
   },
   {
     day: 4, start: "15:45", end: "17:15",

@@ -24,11 +24,11 @@ a clear marker for which classes actually take attendance.
 | Day | Time | Course | Type | Room | Attendance |
 |---|---|---|---|---|---|
 | Wed | 14:00–15:30 | Introduction to Principles of Computers | Lecture | MIII | Optional |
-| Wed | 17:30–19:00 | Mathematical Logic and Graph Theory | Seminar | PEF EV | Optional |
-| Wed | 19:15–20:45 | Mathematical Logic and Graph Theory | Lecture | PEF EI | Optional |
+| Wed | 17:30–19:00 | Mathematical Logic and Graph Theory | Seminar | PEF EV | **Required** |
+| Wed | 19:15–20:45 | Mathematical Logic and Graph Theory | Lecture | PEF EI | **Required** |
 | Thu | 08:45–10:15 | Fundamentals of Juridical Sciences | Lecture | MII | **Required** |
-| Thu | 10:30–12:00 | Theory of Managing Organisational Systems | Seminar | PEF E323 | Optional |
-| Thu | 12:15–13:45 | Theory of Managing Organisational Systems | Lecture | PEF EI | Optional |
+| Thu | 10:30–12:00 | Theory of Managing Organisational Systems | Seminar | PEF E323 | **Required** |
+| Thu | 12:15–13:45 | Theory of Managing Organisational Systems | Lecture | PEF EI | **Required** |
 | Thu | 15:45–17:15 | Fundamentals of Juridical Sciences | Seminar | PEF D444 | **Required** |
 | Thu | 17:30–19:00 | English for IT – 1st term | Seminar | PEF DI | **75%** |
 | Fri | 10:30–12:00 | Introduction to Principles of Computers | Seminar | PEF C27 | Optional |
